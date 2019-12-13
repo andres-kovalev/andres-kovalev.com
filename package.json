@@ -4,6 +4,8 @@
   "description": "andres-kovalev.ru personal page",
   "main": "index.js",
   "dependencies": {
+    "classnames": "^2.2.6",
+    "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0",
@@ -31,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/andres-kovalev/home-page/issues"
   },
-  "homepage": "https://github.com/andres-kovalev/home-page#readme",
+  "homepage": "https://andres-kovalev.ru/",
   "devDependencies": {
     "create-react-app": "^3.2.0"
   },
