@@ -1,0 +1,20 @@
+.title {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 300;
+    color: transparent;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 7rem;
+    color: transparent;
+}
+
+@media (max-width: 60rem) {
+    .header {
+        font-size: 3rem;
+    }
+}

@@ -4,6 +4,7 @@ import cx from 'classnames';
 import styles from "./App.module.scss";
 
 import links from '../../consts/links'
+import Logo from '../Logo';
 
 function App() {
   return (
@@ -32,8 +33,7 @@ function App() {
         </ul>
       </section>
       <section className={styles.filler}>
-        <h1 className={styles.header}>Andres Kovalev</h1>
-        <h2 className={styles.subheader}>Front-End developer</h2>
+        <Logo />
       </section>
     </main>
   );
