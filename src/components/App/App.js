@@ -11,7 +11,7 @@ function App() {
     <main class={styles.main}>
       <section className={styles.content}>
         <h3 className={styles.info}>
-          Still thinking about content for this site
+          Thinking about content for this page
         </h3>
         <p className={styles.text}>
           in the meantime
