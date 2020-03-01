@@ -1,12 +1,12 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import cx from 'classnames';
 
 import styles from './Logo.module.scss';
 
-import useLogoStyles from '../../hooks/useLogoStyles';
+import Canvas from '../Canvas';
+import primaryText from '../../consts/primary-logo';
+import secondaryText from '../../consts/secondary-logo';
 
 function Logo() {
-    const classes = useLogoStyles();
     const [ isSecondary, setIsSecondary ] = useState(false);
     const toggle = useCallback(
         () => setIsSecondary(isSecondary => !isSecondary),
@@ -19,17 +19,13 @@ function Logo() {
         return () => clearInterval(interval);
     }, []);
 
-    const className = cx(styles.title, classes.logo, {
-        [classes.secondary]: isSecondary
-    });
-
     return (
-        <React.Fragment>
-            <h1 className={className}>
-                Andres Kovalev
-            </h1>
-            <h2 className={styles.subtitle}>Front-End developer</h2>
-        </React.Fragment>
+        <Canvas
+            label="Andres Kovalev - Front-End developer"
+            className={ styles.logo }
+            image={ isSecondary ? secondaryText : primaryText }
+            minPixels={ 250 }
+        />
     );
 }
 

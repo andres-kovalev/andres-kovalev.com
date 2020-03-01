@@ -1,7 +1,7 @@
 {
   "name": "andres-kovalev.ru",
   "version": "0.1.0",
-  "description": "andres-kovalev.ru personal page",
+  "description": "andres-kovalev.com personal page",
   "main": "index.js",
   "dependencies": {
     "classnames": "^2.2.6",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/andres-kovalev/home-page/issues"
   },
-  "homepage": "https://andres-kovalev.ru/",
+  "homepage": "https://andres-kovalev.com/",
   "devDependencies": {
     "create-react-app": "^3.2.0"
   },

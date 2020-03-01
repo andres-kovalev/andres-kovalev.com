@@ -1,0 +1,17 @@
+.pixel {
+    transition: all 1s ease;
+}
+
+@for $delay from 0 to 9 {
+    .shake-#{ $delay } {
+        animation: shake 0.5s infinite ease-in-out alternate-reverse ($delay * 1s / 10);
+    }
+}
+
+@keyframes shake {
+    0% { transform: translate(-0.2px,0) }
+    25% { transform: translate(0.1px,-0.1px) }
+    50% { transform: translate(-0.1px,0.2px) }
+    75% { transform: translate(0.2px,-0.2px) }
+    100% { transform: translate(-0.2px,0) }
+}
