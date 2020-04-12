@@ -10,6 +10,7 @@ echo "building app..."
 npm run build
 
 echo "fetching gp-pages..."
+mkdir ${TEMP_DIR}
 mkdir ${TEMP_DIR}/gh-pages
 cd ${TEMP_DIR}/gh-pages
 git init
