@@ -17,6 +17,7 @@ function Logo() {
         const interval = setInterval(toggle, 4000);
 
         return () => clearInterval(interval);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (

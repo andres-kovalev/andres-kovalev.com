@@ -1,13 +1,4 @@
-{
-    "parser": "babel-eslint",
-    "parserOptions": {
-        "ecmaVersion": 9,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true,
-            "modules": true
-        }
-    },
+module.exports = {
     "rules": {
         "indent": ["error", 4, { "SwitchCase": 1 }],
         "comma-dangle": ["error", "never"],
