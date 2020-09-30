@@ -3,11 +3,15 @@ export function maxLength(max, { length }) {
 }
 
 export function getProps(rows, width, height, numberOfPixels) {
-    const items = rows.flatMap((line, row) =>
-        line
-            .split('')
-            .map((char, column) => (isSpace(char) ? null : [ row, column, 'black' ]))
-            .filter(Boolean));
+    const items = rows.map(
+        (line, row) =>
+            line
+                .split('')
+                .map((char, column) => (isSpace(char) ? null : [ row, column, 'black' ]))
+                .filter(Boolean)
+    ).reduce(
+        (reduced, items) => reduced.concat(items), []
+    );
 
     if (items.length > numberOfPixels.current) {
         // eslint-disable-next-line no-param-reassign
