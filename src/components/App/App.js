@@ -8,7 +8,7 @@ import Logo from '../Logo';
 
 function App() {
     return (
-        <main class={styles.main}>
+        <main className={styles.main}>
             <section className={styles.content}>
                 <h3 className={styles.info}>
           Thinking about content for this page
