@@ -32,7 +32,7 @@ function App() {
                     ))}
                 </ul>
             </section>
-            <section className={styles.filler}>
+            <section className={styles.logo}>
                 <Logo />
             </section>
         </main>
