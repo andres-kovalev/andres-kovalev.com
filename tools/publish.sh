@@ -20,7 +20,7 @@ git checkout gh-pages
 
 echo "preparing commit..."
 git rm -rf .
-mv -v ../../build/* .
+mv -v ../../out/* .
 echo -n "andres-kovalev.com" > CNAME
 git add -A .
 git config user.email "marcel@akovalev.ru"

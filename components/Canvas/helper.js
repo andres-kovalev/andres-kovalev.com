@@ -10,7 +10,7 @@ export function getProps(rows, width, height, numberOfPixels) {
                 .map((char, column) => (isSpace(char) ? null : [ row, column, 'black' ]))
                 .filter(Boolean)
     ).reduce(
-        (reduced, items) => reduced.concat(items), []
+        (acc, addition) => acc.concat(addition), []
     );
 
     if (items.length > numberOfPixels.current) {
