@@ -16,12 +16,17 @@
 
 .logo {
   flex-grow: 1;
-  background-color: #dfbfc0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 30vh;
+
+  &, &:global(.pink) { background-color: #dfbfc0; }
+  &:global(.purple) { background-color: #b3aad2; }
+  &:global(.blue) { background-color: #a5cada; }
+  &:global(.green) { background-color: #a5dab0; }
+  &:global(.yellow) { background-color: #eaedab; }
 }
 
 .info {

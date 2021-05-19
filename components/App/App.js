@@ -32,11 +32,19 @@ function App() {
                     ))}
                 </ul>
             </section>
-            <section className={styles.logo}>
+            <section className={cx('logo', styles.logo)}>
+                <script dangerouslySetInnerHTML={{ __html: `(${ updateLogo.toString() })()` }} />
                 <Logo />
             </section>
         </main>
     );
+}
+
+function updateLogo() {
+    const LOGO_COLORS = [ 'pink', 'purple', 'green', 'blue', 'yellow' ];
+    const colorClass = LOGO_COLORS[Math.round(Math.random() * LOGO_COLORS.length)];
+
+    document.querySelector('.logo').classList.add(colorClass);
 }
 
 export default App;
