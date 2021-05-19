@@ -8,7 +8,7 @@ import Logo from '../Logo';
 
 function App() {
     return (
-        <main class={styles.main}>
+        <main className={styles.main}>
             <section className={styles.content}>
                 <h3 className={styles.info}>
           Thinking about content for this page
@@ -32,11 +32,19 @@ function App() {
                     ))}
                 </ul>
             </section>
-            <section className={styles.filler}>
+            <section className={cx('logo', styles.logo)}>
+                <script dangerouslySetInnerHTML={{ __html: `(${ updateLogo.toString() })()` }} />
                 <Logo />
             </section>
         </main>
     );
+}
+
+function updateLogo() {
+    const LOGO_COLORS = [ 'pink', 'purple', 'green', 'blue', 'yellow' ];
+    const colorClass = LOGO_COLORS[Math.round(Math.random() * LOGO_COLORS.length)];
+
+    document.querySelector('.logo').classList.add(colorClass);
 }
 
 export default App;
