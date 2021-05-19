@@ -1,6 +1,6 @@
 {
     "name": "andres-kovalev.com",
-    "version": "0.3.2",
+    "version": "0.4.0",
     "description": "andres-kovalev.com personal page",
     "dependencies": {
       "classnames": "2.2.6",

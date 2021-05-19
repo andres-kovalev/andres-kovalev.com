@@ -22,6 +22,7 @@ echo "preparing commit..."
 git rm -rf .
 mv -v ../../out/* .
 echo -n "andres-kovalev.com" > CNAME
+touch .nojekyll
 git add -A .
 git config user.email "marcel@akovalev.ru"
 git config user.name "marcelka-bot"
